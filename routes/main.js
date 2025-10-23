@@ -6,7 +6,7 @@ const router = express.Router();
 /** ---------- Part A & B routes (keep these) ---------- */
 router.get("/", (req, res) => res.send("Hello World!"));
 router.get("/about", (req, res) => res.send("<h1>This is the about page</h1>"));
-router.get("/contact", (req, res) => res.send("<h1>Contact me at anfas@example.com</h1>"));
+router.get("/contact", (req, res) => res.send("<h1>Contact me at anfas@gmail.com</h1>"));
 router.get("/date", (req, res) =>
   res.send(`<h1>Today's date is: ${new Date().toLocaleString()}</h1>`)
 );
@@ -14,7 +14,7 @@ router.get("/date", (req, res) =>
 /** ---------- Part D: Extension tasks ---------- */
 
 // D10) Parameterised route: /welcome/:name
-// Visit: http://localhost:8000/welcome/Ali
+// Visit: http://localhost:8000/welcome/Anfas
 router.get("/welcome/:name", (req, res) => {
   const { name } = req.params;
   res.send(`<h1>Welcome, ${name}!</h1>`);
